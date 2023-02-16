@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* COLORS */
+
+  /* PRIMARY COLORS */
+
+  --clr-primary-pale-blue: hsl(225, 100%, 94%);
+  --clr-primary-bright-blue: rgb(56, 41, 224);
+
+  /* NEUTRAL COLORS */
+
+  --clr-neutral-blue-100: hsl(225, 100%, 98%);
+  --clr-neutral-blue-300: hsl(224, 23%, 55%);
+  --clr-neutral-blue-800: hsl(223, 47%, 23%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("images/pattern-background-desktop.svg"),
+    var(--clr-primary-pale-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  font-family: "Red Hat Display";
+  text-align: center;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+  overflow: hidden;
+}
+p {
+  font-size: 15px;
+  color: var(--clr-neutral-blue-300);
+}
+
+/* Card Styling */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section {
+  background-color: white;
+  width: 400px;
+  border-radius: 25px;
+}
+
+/* hero image */
+.hero-img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+/* Order Details */
+.order-details {
+  padding: 30px;
+}
+.title {
+  padding: 0 0 10px;
+  font-weight: 900;
+  color: var(--clr-neutral-blue-800);
+}
+.desc {
+  padding: 5px 0 25px;
+  line-height: 1.65;
+}
+
+/* Plan */
+.plan {
+  background-color: var(--clr-neutral-blue-100);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.plan-img{
+  margin-right: 8px;
+}
+.plan-col-2 {
+  margin-right: 32%;
+}
+.plan-title {
+  color: var(--clr-neutral-blue-800);
+  
+}
+.plan-change-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan-change-link > a {
+  color: var(--clr-primary-bright-blue);
+  font-size: 15px;
+  transition: opacity 0.2s ease;
+  padding-right: 10px;
+}
+.change-link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Payment Buttons */
+.btn {
+  margin-top: 10%;
+}
+.pay-btn {
+  all:unset;
+  transition: opacity 0.5s ease;
+  box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, 0.25);
+  color: white;
+  background-color: var(--clr-primary-bright-blue);
+  border-radius: 0.9rem;
+  cursor: pointer;
+
+  padding: 10px 87px;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+}
+.pay-btn:hover {
+  opacity: 0.8;
+}
+.cancel-btn {
+ 
+  all: unset;
+  color: var(--clr-neutral-blue-300);
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+  padding: 2em 1em 1em;
+}
+.cancel-btn:hover {
+  opacity: 0.8;
+  color:black;
+}
+
+/* Footer */
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  position: fixed;
+  bottom: 6px;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background: url("images/pattern-background-mobile.svg"),
+      var(--clr-primary-pale-blue);
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  section {
+  background-color: white;
+  width: 335px;
+  border-radius: 20px;
+}
+.order-details {
+  padding: 25px;
+}
+.title {
+  padding: 0  0 5px;
+  font-weight: 900;
+  color: var(--clr-neutral-blue-800);
+}
+.desc {
+  padding: 4px 0 10px;
+  line-height: 1.5;
+}
+.btn {
+  margin-top: 25px;
+}
+p{
+  font-size: 0.8rem;
+}
+.plan-col-2 {
+  margin-right: 12%;
+}
+.plan-change-link > a {
+
+  font-size: 0.8rem;
+ 
+}
+.pay-btn {
+
+  padding: 10px 70px;
+  
+  font-size: 0.8rem;
+}
+.cancel-btn{
+  padding: 1em 1em 0.5em;
+}
+.attribution {
+  font-size: 10px;
+
+}
+}
